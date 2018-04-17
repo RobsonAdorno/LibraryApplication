@@ -1,0 +1,11 @@
+/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/bin/Debug/netcoreapp2.0/LibraryApplication.deps.json
+/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/bin/Debug/netcoreapp2.0/LibraryApplication.runtimeconfig.json
+/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/bin/Debug/netcoreapp2.0/LibraryApplication.runtimeconfig.dev.json
+/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/bin/Debug/netcoreapp2.0/LibraryApplication.dll
+/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/bin/Debug/netcoreapp2.0/LibraryApplication.pdb
+/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.csprojResolveAssemblyReference.cache
+/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.csproj.CoreCompileInputs.cache
+/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.AssemblyInfoInputs.cache
+/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.AssemblyInfo.cs
+/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.dll
+/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.pdb

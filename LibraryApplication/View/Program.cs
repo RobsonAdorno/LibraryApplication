@@ -1,4 +1,5 @@
 ﻿using System;
+using LibraryApplication.Model;
 
 namespace LibraryApplication
 {
@@ -9,6 +10,7 @@ namespace LibraryApplication
             string op;
             do
             {
+                Book book = new Book();
                 Console.WriteLine("Selecione abaixo a opção desejada!");
                 Console.WriteLine("-----------------------------------");
                 Console.WriteLine("1 – Cadastrar Livro");
@@ -28,9 +30,11 @@ namespace LibraryApplication
                 {
                     case "1":
                         Console.WriteLine("Digite o nome do livro, por favor!");
-                        string BookName = Console.ReadLine();
-                        int PagesOfBook = Convert.ToInt32(Console.ReadLine());
-                        int Date = DateTime.Now.Year;
+                         book.BookName = Console.ReadLine();
+                        Console.WriteLine("Digite a quantidade de páginas do livro!");
+                         book.PagesOfBook = Console.ReadLine();
+                         book.CurrentDate = DateTime.Now.ToString("dd/MM/yyyy");
+                       
                         break;
                     case "2":
 

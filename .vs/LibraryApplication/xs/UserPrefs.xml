@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{05C139FB-C510-4DC4-91E0-691178BA6810}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LibraryApplication/View/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LibraryApplication/DAL/BookDAO.cs">
     <Files>
-      <File FileName="LibraryApplication/View/Program.cs" Line="14" Column="56" />
+      <File FileName="LibraryApplication/View/Program.cs" Line="9" Column="10" />
+      <File FileName="LibraryApplication/Model/Book.cs" Line="8" Column="22" />
+      <File FileName="LibraryApplication/DAL/BookDAO.cs" Line="6" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
