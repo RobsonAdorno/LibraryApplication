@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/robson-macbook/Projects/LibraryApplication/LibraryApplication/LibraryApplication.csproj",
+      "projectUniqueName": "/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/LibraryApplication.csproj",
       "projectName": "LibraryApplication",
-      "projectPath": "/Users/robson-macbook/Projects/LibraryApplication/LibraryApplication/LibraryApplication.csproj",
+      "projectPath": "/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/LibraryApplication.csproj",
       "packagesPath": "/Users/robson-macbook/.nuget/packages/",
-      "outputPath": "/Users/robson-macbook/Projects/LibraryApplication/LibraryApplication/obj",
+      "outputPath": "/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

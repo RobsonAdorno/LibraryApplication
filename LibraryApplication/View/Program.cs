@@ -27,7 +27,10 @@ namespace LibraryApplication
                 switch (op)
                 {
                     case "1":
-
+                        Console.WriteLine("Digite o nome do livro, por favor!");
+                        string BookName = Console.ReadLine();
+                        int PagesOfBook = Convert.ToInt32(Console.ReadLine());
+                        int Date = DateTime.Now.Year;
                         break;
                     case "2":
 
