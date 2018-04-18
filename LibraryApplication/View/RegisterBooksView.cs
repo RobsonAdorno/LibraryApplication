@@ -17,6 +17,8 @@ namespace LibraryApplication.View
             if (BookDAO.Register(book))
             {
                 Console.WriteLine("Livro " + book.BookName + " cadastrado com sucesso!");
+                Console.WriteLine("Por favor, digite o seu nome!");
+
             }
             else
             {
