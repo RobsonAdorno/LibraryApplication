@@ -8,15 +8,23 @@ namespace LibraryApplication.View
     {
         public static void Checked(){
             LendABook lb = new LendABook();
+            Book book = new Book();
             Console.WriteLine("Por favor, qual o nome do livro?");
-            string name = Console.ReadLine();
-            if (BookDAO.CallRegister(name)){
+            book.BookName =  Console.ReadLine();
+            if (BookDAO.CallRegister(book.BookName)){
+                Console.WriteLine("Encontrado o cadastro do livro: " + book.BookName + " na base de dados!");
 
-                Console.WriteLine("Encontrado o cadastro do livro: " + name + " na base de dados!");
+                lb.Book.BookName = book.BookName;
 
                 Console.WriteLine("Por favor, digite o nome do cliente!");
                 lb.NameClient = Console.ReadLine();
                 lb.DateLend = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+                if (LendABookDAO.RegisterLend(lb)){
+
+                    Console.WriteLine("Emprestimo efetuado com sucesso, para o(a) " + lb.NameClient + " !");
+                }else{
+                    Console.WriteLine("Livro já está emprestado!");
+                }
 
             }else
             {

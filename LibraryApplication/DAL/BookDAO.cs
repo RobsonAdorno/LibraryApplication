@@ -35,6 +35,10 @@ namespace LibraryApplication.DAL
 
             return false;
         }
+
+        public static List<Book> CallTheList(){
+            return ListOfBook;
+        }
     }
 
    
