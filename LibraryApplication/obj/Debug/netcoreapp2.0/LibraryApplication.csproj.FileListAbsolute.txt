@@ -9,3 +9,14 @@
 /Users/rferreira/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.AssemblyInfo.cs
 /Users/rferreira/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.dll
 /Users/rferreira/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.pdb
+/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/bin/Debug/netcoreapp2.0/LibraryApplication.deps.json
+/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/bin/Debug/netcoreapp2.0/LibraryApplication.runtimeconfig.json
+/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/bin/Debug/netcoreapp2.0/LibraryApplication.runtimeconfig.dev.json
+/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/bin/Debug/netcoreapp2.0/LibraryApplication.dll
+/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/bin/Debug/netcoreapp2.0/LibraryApplication.pdb
+/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.csprojResolveAssemblyReference.cache
+/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.csproj.CoreCompileInputs.cache
+/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.AssemblyInfoInputs.cache
+/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.AssemblyInfo.cs
+/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.dll
+/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/obj/Debug/netcoreapp2.0/LibraryApplication.pdb

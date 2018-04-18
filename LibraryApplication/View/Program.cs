@@ -1,5 +1,7 @@
 ﻿using System;
+using LibraryApplication.DAL;
 using LibraryApplication.Model;
+using LibraryApplication.View;
 
 namespace LibraryApplication
 {
@@ -10,7 +12,8 @@ namespace LibraryApplication
             string op;
             do
             {
-                Book book = new Book();
+                Console.Clear();
+
                 Console.WriteLine("Selecione abaixo a opção desejada!");
                 Console.WriteLine("-----------------------------------");
                 Console.WriteLine("1 – Cadastrar Livro");
@@ -24,20 +27,17 @@ namespace LibraryApplication
                 Console.WriteLine("5 – Consultar Livro");
                 Console.WriteLine("-----------------------------------");
                 Console.WriteLine("0 – Sair");
+                Console.WriteLine("-----------------------------------");
+                Console.WriteLine(" ");
                  op = Console.ReadLine();
 
                 switch (op)
                 {
                     case "1":
-                        Console.WriteLine("Digite o nome do livro, por favor!");
-                         book.BookName = Console.ReadLine();
-                        Console.WriteLine("Digite a quantidade de páginas do livro!");
-                         book.PagesOfBook = Console.ReadLine();
-                         book.CurrentDate = DateTime.Now.ToString("dd/MM/yyyy");
-                       
+                        RegisterBooksView.ShowRegisterBookView();
                         break;
                     case "2":
-
+                        LendBookView.Checked();
                         break;
                     case "3":
 
