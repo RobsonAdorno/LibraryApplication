@@ -19,8 +19,7 @@ namespace LibraryApplication.View
                 Console.WriteLine("Por favor, digite o nome do cliente!");
                 lb.NameClient = Console.ReadLine();
                 lb.DateLend = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
-                if (LendABookDAO.RegisterLend(lb)){
-
+                if (LendABookDAO.CallLend(lb)){
                     Console.WriteLine("Emprestimo efetuado com sucesso, para o(a) " + lb.NameClient + " !");
                 }else{
                     Console.WriteLine("Livro já está emprestado!");
