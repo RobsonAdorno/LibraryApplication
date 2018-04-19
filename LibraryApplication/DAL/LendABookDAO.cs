@@ -10,28 +10,34 @@ namespace LibraryApplication.DAL
 
 
 
-        public static bool RegisterLend(LendABook l){
+        public static LendABook RegisterLend(LendABook l){
             foreach (LendABook item in ListOfLend)
             {
-                Console.WriteLine(item.NameClient);
-                if (item.Equals(l.Book.BookName) && (item.NameClient == null)){
-                    return true;
+                Console.WriteLine(item);
+                if (!item.Book.BookName.Equals(l.Book.BookName) && (!item.NameClient.Equals(l.NameClient))){
+                    return item;
                 }
 
             }
 
-            return false;
+            return null;
 
         }
 
         public static bool CallLend(LendABook l){
-            if (RegisterLend(l))
+            if (RegisterLend(l) == null)
             {
-                return false;
+                ListOfLend.Add(l);
+                return true;
             }
-            ListOfLend.Add(l);
-            return true;
+
+            return false;
         }
 
+        public static List<LendABook> lstagem()
+        {
+
+            return ListOfLend;
+        }
     }
 }

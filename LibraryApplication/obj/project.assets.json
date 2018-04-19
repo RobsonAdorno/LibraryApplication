@@ -664,23 +664,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/rferreira/.nuget/packages/": {},
+    "/Users/robson-macbook/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/LibraryApplication.csproj",
+      "projectUniqueName": "/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/LibraryApplication.csproj",
       "projectName": "LibraryApplication",
-      "projectPath": "/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/LibraryApplication.csproj",
-      "packagesPath": "/Users/rferreira/.nuget/packages/",
-      "outputPath": "/Users/rferreira/Desktop/LibraryApplication/LibraryApplication/obj",
+      "projectPath": "/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/LibraryApplication.csproj",
+      "packagesPath": "/Users/robson-macbook/.nuget/packages/",
+      "outputPath": "/Users/robson-macbook/Desktop/LibraryApplication/LibraryApplication/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/rferreira/.config/NuGet/NuGet.Config"
+        "/Users/robson-macbook/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"

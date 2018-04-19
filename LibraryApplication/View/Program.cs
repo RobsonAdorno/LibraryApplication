@@ -43,7 +43,11 @@ namespace LibraryApplication
 
                         break;
                     case "4":
-
+                        foreach (LendABook item in LendABookDAO.lstagem())
+                        {
+                            Console.WriteLine(item);
+                        }
+                        Console.ReadKey();
                         break;
                     case "5":
 
