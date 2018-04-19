@@ -17,7 +17,9 @@ namespace LibraryApplication.Model
 
 		public override string ToString()
 		{
-            return "Nome do livro : " + Book.BookName;
+            return "Nome do livro : " + Book.BookName+
+             "\nNome do Cliente: " + NameClient +
+             "\nData do Emprestimo: " + DateLend;
 		}
 
 	}

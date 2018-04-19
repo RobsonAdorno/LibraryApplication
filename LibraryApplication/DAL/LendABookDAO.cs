@@ -13,8 +13,7 @@ namespace LibraryApplication.DAL
         public static LendABook RegisterLend(LendABook l){
             foreach (LendABook item in ListOfLend)
             {
-                Console.WriteLine(item);
-                if (!item.Book.BookName.Equals(l.Book.BookName) && (!item.NameClient.Equals(l.NameClient))){
+                if (item.Book.BookName.Equals(l.Book.BookName)){
                     return item;
                 }
 
