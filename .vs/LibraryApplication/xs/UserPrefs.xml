@@ -1,11 +1,7 @@
 ﻿<Properties StartupConfiguration="{05C139FB-C510-4DC4-91E0-691178BA6810}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LibraryApplication/Model/LendABook.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LibraryApplication/View/Program.cs">
     <Files>
-      <File FileName="LibraryApplication/View/Program.cs" Line="21" Column="58" />
-      <File FileName="LibraryApplication/View/LendBookView.cs" Line="1" Column="1" />
-      <File FileName="LibraryApplication/Model/Book.cs" Line="11" Column="1" />
-      <File FileName="LibraryApplication/DAL/LendABookDAO.cs" Line="19" Column="18" />
-      <File FileName="LibraryApplication/Model/LendABook.cs" Line="21" Column="43" />
+      <File FileName="LibraryApplication/View/Program.cs" Line="43" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -40,14 +40,10 @@ namespace LibraryApplication
                         LendBookView.Checked();
                         break;
                     case "3":
-
+                        GiveBackView.Checked();
                         break;
                     case "4":
-                        foreach (LendABook item in LendABookDAO.lstagem())
-                        {
-                            Console.WriteLine(item);
-                        }
-                        Console.ReadKey();
+                       
                         break;
                     case "5":
 
