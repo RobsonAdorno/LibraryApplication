@@ -12,11 +12,19 @@ namespace LibraryApplication.DAL
 
             foreach (GiveBack item in ListGiveBack)
             {
-                if (item.Book.BookName.Equals(g.Book.BookName))
+                try
                 {
-                    g.LendABook.Status = false;
-                    return item;
+                    if (item.Book.BookName.Equals(g.Book.BookName))
+                    {
+                        return item;
+                    }
+
+                    }
+                catch (Exception)
+                {
+                    Console.WriteLine("Por favor, cadastrar um emprestimo primeiro!");
                 }
+
             }
 
             return null;
@@ -27,21 +35,34 @@ namespace LibraryApplication.DAL
 
             foreach (GiveBack item in ListGiveBack)
             {
-                if (CallGiveBack(b) == null && b.LendABook.Status == true)
+                if (CallGiveBack(b) == null && !Verification(b))
                 {
-                    return false;
-
-                }else{
-
-                    b.LendABook.Status = false;
                     ListGiveBack.Add(b);
+                    return true;
 
                 }
             }
 
-           
-            return true;
+            return false;
            
         }
+
+        public static bool Verification(GiveBack b){
+            
+            foreach (LendABook item in LendABookDAO.ReturnStatus())
+            {
+                if (item.Book.BookName.Equals(b.Book.BookName))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public static List<GiveBack> CallBack(){
+            return ListGiveBack;
+        }
+
     }
 }

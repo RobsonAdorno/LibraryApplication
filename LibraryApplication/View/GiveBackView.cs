@@ -22,7 +22,7 @@ namespace LibraryApplication.View
             Console.WriteLine("Você gostaria realmente de devolver o livro? [S/N]");
             string decision = Console.ReadLine();
 
-            if (decision.Equals("S"))
+            if (decision.Equals("S") && !decision.Equals("N"))
             {
                 giveBack.givebackdate = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
 
@@ -32,14 +32,10 @@ namespace LibraryApplication.View
                 }else{
                     Console.WriteLine("Não foi possivel realizar devolucao!");
                 }
-
-
-            }else if (decision.Equals("N")){
-
-                Console.WriteLine("Pressione qualquer tecla para voltar ao menu");
-                Console.ReadKey();
-
             }
+
+            Console.WriteLine("Pressione qualquer tecla para voltar ao menu");
+            Console.ReadKey();
         }
     }
 }

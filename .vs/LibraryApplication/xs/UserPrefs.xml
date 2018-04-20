@@ -1,7 +1,11 @@
 ﻿<Properties StartupConfiguration="{05C139FB-C510-4DC4-91E0-691178BA6810}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LibraryApplication/View/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LibraryApplication/View/GiveBackView.cs">
     <Files>
-      <File FileName="LibraryApplication/View/Program.cs" Line="43" Column="48" />
+      <File FileName="LibraryApplication/View/Program.cs" Line="21" Column="58" />
+      <File FileName="LibraryApplication/DAL/LendABookDAO.cs" Line="39" Column="58" />
+      <File FileName="LibraryApplication/DAL/GiveBackDAO.cs" Line="15" Column="1" />
+      <File FileName="LibraryApplication/View/LendBookView.cs" Line="17" Column="50" />
+      <File FileName="LibraryApplication/View/GiveBackView.cs" Line="29" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
