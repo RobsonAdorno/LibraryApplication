@@ -9,11 +9,11 @@ namespace LibraryApplication.DAL
         private static List<LendABook> ListOfLend = new List<LendABook>();
 
 
-
         public static LendABook RegisterLend(LendABook l){
             foreach (LendABook item in ListOfLend)
             {
                 if (item.Book.BookName.Equals(l.Book.BookName)){
+                    l.Status = true;
                     return item;
                 }
 
@@ -24,8 +24,9 @@ namespace LibraryApplication.DAL
         }
 
         public static bool CallLend(LendABook l){
-            if (RegisterLend(l) == null)
+            if (RegisterLend(l) == null && l.Status == false)
             {
+                Console.WriteLine(l.Status = true);
                 ListOfLend.Add(l);
                 return true;
             }

@@ -6,20 +6,40 @@ namespace LibraryApplication.DAL
 {
     public class GiveBackDAO
     {
-        private static List<Book> ListGiveBack = new List<Book>();
+        private static List<GiveBack> ListGiveBack = new List<GiveBack>();
 
-        public static bool RegisterGiveBack(Book b){
+        public static GiveBack CallGiveBack(GiveBack g){
 
-            foreach (Book item in ListGiveBack)
+            foreach (GiveBack item in ListGiveBack)
             {
-                if (item.BookName.Equals(b.BookName))
+                if (item.Book.BookName.Equals(g.Book.BookName))
+                {
+                    g.LendABook.Status = false;
+                    return item;
+                }
+            }
+
+            return null;
+        }
+
+
+        public static bool RegisterGiveBack(GiveBack b){
+
+            foreach (GiveBack item in ListGiveBack)
+            {
+                if (CallGiveBack(b) == null && b.LendABook.Status == true)
                 {
                     return false;
+
+                }else{
+
+                    b.LendABook.Status = false;
+                    ListGiveBack.Add(b);
 
                 }
             }
 
-            ListGiveBack.Add(b);
+           
             return true;
            
         }

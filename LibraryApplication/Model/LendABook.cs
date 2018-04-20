@@ -14,6 +14,7 @@ namespace LibraryApplication.Model
         public string NameClient { get; set; }
         public string DateLend { get; set; }
         public Book Book { get; set; }
+        public bool Status { get; set; }
 
 		public override string ToString()
 		{
