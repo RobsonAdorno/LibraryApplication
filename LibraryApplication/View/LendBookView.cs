@@ -21,6 +21,7 @@ namespace LibraryApplication.View
                 lb.DateLend = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
                 if (LendABookDAO.CallLend(lb)){
                     Console.WriteLine("Emprestimo efetuado com sucesso, para o(a) " + lb.NameClient + " !");
+                    lb.Status = true;
                 }else{
                     Console.WriteLine("Livro já está emprestado!");
                 }

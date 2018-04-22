@@ -8,56 +8,51 @@ namespace LibraryApplication.DAL
     {
         private static List<GiveBack> ListGiveBack = new List<GiveBack>();
 
-        public static GiveBack CallGiveBack(GiveBack g){
 
-            foreach (GiveBack item in ListGiveBack)
+        public static bool TratamentOfError(string book){
+            Book b = new Book();
+
+            foreach (LendABook item in LendABookDAO.ReturnStatus())
             {
-                try
+                Console.WriteLine(item.Status);
+                if (item.Book.BookName.Equals(book) && item.Status == true)
                 {
-                    if (item.Book.BookName.Equals(g.Book.BookName))
-                    {
-                        return item;
-                    }
-
-                    }
-                catch (Exception)
-                {
-                    Console.WriteLine("Por favor, cadastrar um emprestimo primeiro!");
+                    item.Status = false;
+                    return true;
                 }
-
             }
+
+            return false;
+        }
+       
+
+        public static GiveBack CallGiveBack(GiveBack g)
+        {
+                 Book b = new Book();
+            LendABook aBook = new LendABook();
+                foreach (GiveBack item in ListGiveBack)
+                    {
+                        if (!item.Book.BookName.Equals(b.BookName))
+                        {
+                            return item;
+                        }
+                    }
+                
+            
 
             return null;
         }
-
-
-        public static bool RegisterGiveBack(GiveBack b){
-
-            foreach (GiveBack item in ListGiveBack)
-            {
-                if (CallGiveBack(b) == null && !Verification(b))
-                {
-                    ListGiveBack.Add(b);
-                    return true;
-
-                }
-            }
-
-            return false;
+        public static bool RegisterGiveBack(GiveBack b)
+        {
            
-        }
-
-        public static bool Verification(GiveBack b){
-            
-            foreach (LendABook item in LendABookDAO.ReturnStatus())
-            {
-                if (item.Book.BookName.Equals(b.Book.BookName))
+            if (CallGiveBack(b) == null)
                 {
-                    return true;
-                }
+                ListGiveBack.Add(b);
+                return true;
             }
 
             return false;
+
         }
 
         public static List<GiveBack> CallBack(){

@@ -13,7 +13,7 @@ namespace LibraryApplication
             do
             {
                 Console.Clear();
-
+                LendABook lend = new LendABook();
                 Console.WriteLine("Selecione abaixo a opção desejada!");
                 Console.WriteLine("-----------------------------------");
                 Console.WriteLine("1 – Cadastrar Livro");
@@ -43,7 +43,7 @@ namespace LibraryApplication
                         GiveBackView.Checked();
                         break;
                     case "4":
-                       
+                        ShowOperation.Checked();
                         break;
                     case "5":
 

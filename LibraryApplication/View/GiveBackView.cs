@@ -8,32 +8,38 @@ namespace LibraryApplication.View
     {
         public static void Checked()
         {
+            LendABook lend = new LendABook();
             Book book = new Book();
             GiveBack giveBack = new GiveBack();
             Console.WriteLine("Por favor, digite o nome do livro");
             book.BookName = Console.ReadLine();
 
-            if(GiveBackDAO.RegisterGiveBack(giveBack)){
-                Console.WriteLine("Livro está cadastrado na base de dados!");
-            }else{
-                Console.WriteLine("Desculpa, esse livro não está cadastrado em nossa base de dados!");
-            }
+            if(GiveBackDAO.TratamentOfError(book.BookName)){
+                Console.WriteLine("Livro está emprestado!");
+                lend.Status = false;
+                Console.WriteLine("Você gostaria realmente de devolver o livro? [S/N]");
+                string decision = Console.ReadLine();
 
-            Console.WriteLine("Você gostaria realmente de devolver o livro? [S/N]");
-            string decision = Console.ReadLine();
+                if (decision.Equals("S"))
+                {
+                    giveBack.givebackdate = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
 
-            if (decision.Equals("S") && !decision.Equals("N"))
-            {
-                giveBack.givebackdate = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
-
-                if (GiveBackDAO.RegisterGiveBack(giveBack)){
-
-                    Console.WriteLine("Devolução com sucesso!");
-                }else{
-                    Console.WriteLine("Não foi possivel realizar devolucao!");
+                    if (GiveBackDAO.RegisterGiveBack(giveBack))
+                    {
+                        Console.WriteLine("Devolução com sucesso!");
+                        lend.Status = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Não foi possivel realizar devolucao!");
+                    }
                 }
+
+            }else{
+                Console.WriteLine("Desculpa, esse livro não está emprestado!");
             }
 
+           
             Console.WriteLine("Pressione qualquer tecla para voltar ao menu");
             Console.ReadKey();
         }
