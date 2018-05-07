@@ -14,7 +14,7 @@ namespace LibraryApplication.DAL
 
             foreach (LendABook item in LendABookDAO.ReturnStatus())
             {
-                Console.WriteLine(item.Status);
+                Console.WriteLine(item.Book.BookName);
                 if (item.Book.BookName.Equals(book) && item.Status == true)
                 {
                     item.Status = false;
@@ -37,9 +37,6 @@ namespace LibraryApplication.DAL
                             return item;
                         }
                     }
-                
-            
-
             return null;
         }
         public static bool RegisterGiveBack(GiveBack b)

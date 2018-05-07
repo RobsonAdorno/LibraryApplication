@@ -6,5 +6,13 @@ namespace LibraryApplication.Model
         public string BookName { get; set; }
         public string PagesOfBook { get; set; }
         public string CurrentDate { get; set; }
-    }
+
+		public override string ToString()
+		{
+            return PagesOfBook; 
+		}
+
+	}
+
+
 }

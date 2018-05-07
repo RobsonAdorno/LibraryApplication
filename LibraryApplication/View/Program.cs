@@ -46,7 +46,10 @@ namespace LibraryApplication
                         ShowOperation.Checked();
                         break;
                     case "5":
-
+                        foreach (Book item in BookDAO.CallTheList())
+                        {
+                            Console.WriteLine(item);
+                        }
                         break;
                     case "0":
                         Console.WriteLine("Encerrando...");

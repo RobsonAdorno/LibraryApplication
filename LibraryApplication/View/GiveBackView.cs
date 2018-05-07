@@ -28,6 +28,7 @@ namespace LibraryApplication.View
                     {
                         Console.WriteLine("Devolução com sucesso!");
                         lend.Status = false;
+                        GiveBackDAO.RegisterGiveBack(giveBack);
                     }
                     else
                     {

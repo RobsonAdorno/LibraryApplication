@@ -1,8 +1,12 @@
 ﻿<Properties StartupConfiguration="{05C139FB-C510-4DC4-91E0-691178BA6810}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LibraryApplication/View/ShowOperation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../usr/local/share/dotnet/sdk/2.1.4/Sdks/Microsoft.NET.Sdk/build/Microsoft.PackageDependencyResolution.targets">
     <Files>
-      <File FileName="LibraryApplication/View/ShowOperation.cs" Line="24" Column="80" />
-      <File FileName="LibraryApplication/Model/LendABook.cs" Line="27" Column="11" />
+      <File FileName="LibraryApplication/View/LendBookView.cs" Line="18" Column="35" />
+      <File FileName="LibraryApplication/DAL/LendABookDAO.cs" Line="1" Column="1" />
+      <File FileName="LibraryApplication/Model/Book.cs" Line="8" Column="24" />
+      <File FileName="LibraryApplication/View/RegisterBooksView.cs" Line="16" Column="71" />
+      <File FileName="LibraryApplication/DAL/BookDAO.cs" Line="11" Column="36" />
+      <File FileName="../../../../usr/local/share/dotnet/sdk/2.1.4/Sdks/Microsoft.NET.Sdk/build/Microsoft.PackageDependencyResolution.targets" Line="327" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

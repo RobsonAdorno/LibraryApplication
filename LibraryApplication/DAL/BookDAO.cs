@@ -8,19 +8,19 @@ namespace LibraryApplication.DAL
     {
         private static List<Book> ListOfBook = new List<Book>();
 
-        public static bool Register(Book b)
+        public static Book Register(Book b)
         {
-
+            Console.WriteLine(b.BookName);
             foreach (Book item in ListOfBook)
             {
                 if (b.BookName.Equals(item.BookName))
                 {
-                    return false;
+                    return item;
                 }
             }
 
             ListOfBook.Add(b);
-            return true;
+            return null;
     }
 
         public static bool CallRegister(string name){

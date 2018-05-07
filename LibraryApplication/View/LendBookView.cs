@@ -14,13 +14,13 @@ namespace LibraryApplication.View
             if (BookDAO.CallRegister(book.BookName)){
                 Console.WriteLine("Encontrado o cadastro do livro: " + book.BookName + " na base de dados!");
 
-                lb.Book.BookName = book.BookName;
-
                 Console.WriteLine("Por favor, digite o nome do cliente!");
                 lb.NameClient = Console.ReadLine();
                 lb.DateLend = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+
                 if (LendABookDAO.CallLend(lb)){
                     Console.WriteLine("Emprestimo efetuado com sucesso, para o(a) " + lb.NameClient + " !");
+                    LendABookDAO.CallLend(lb);
                     lb.Status = true;
                 }else{
                     Console.WriteLine("Livro já está emprestado!");

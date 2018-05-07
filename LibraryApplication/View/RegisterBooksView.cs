@@ -14,10 +14,10 @@ namespace LibraryApplication.View
             Console.WriteLine("Digite a quantidade de páginas do livro!");
             book.PagesOfBook = Console.ReadLine();
             book.CurrentDate = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
-            if (BookDAO.Register(book))
+          
+            if (BookDAO.Register(book) == null)
             {
                 Console.WriteLine("Livro " + book.BookName + " cadastrado com sucesso!");
-                Console.WriteLine("Por favor, digite o seu nome!");
 
             }
             else
